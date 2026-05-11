@@ -1,0 +1,26 @@
+[
+  {
+    "query": "Use the trump skill and produce a 5-step migration plan where a running PRIORITY REGISTER is carried across steps and critical constraints stay in ALL CAPS (DEADLINE, BUDGET, RISK LIMIT).",
+    "should_trigger": true
+  },
+  {
+    "query": "Apply the trump CAPS-emphasis approach: maintain ACTIVE PRIORITIES and a PRIORITY REGISTER while reasoning through a multi-step rollout with MUST/NEVER constraints.",
+    "should_trigger": true
+  },
+  {
+    "query": "I need structured planning output using the trump skill template: [STEP N], ACTIVE PRIORITIES, Thinking, DECISION, with ALL CAPS for deadlines and hard limits.",
+    "should_trigger": true
+  },
+  {
+    "query": "What's the weather in Bangkok this weekend?",
+    "should_trigger": false
+  },
+  {
+    "query": "Write a bash script to rotate nginx logs daily.",
+    "should_trigger": false
+  },
+  {
+    "query": "Explain the difference between TCP and UDP.",
+    "should_trigger": false
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "skill_name": "trump",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Plan a migration from MySQL 5.7 to 8.0 in two weeks with zero downtime. Keep cost under $10k and include rollback conditions.",
+      "expected_output": "A structured plan where critical objectives and constraints remain visible via ALL CAPS, and the response includes risk and rollback logic.",
+      "files": [],
+      "assertions": [
+        "Response uses ALL CAPS for key constraints (ZERO DOWNTIME, TWO WEEKS, UNDER $10K)",
+        "Response includes a rollback section with ALL CAPS critical triggers",
+        "At least three critical risks are identified with CAPS emphasis"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Summarize this requirement: ship MVP by Friday, must support SSO, and cannot store PII in logs.",
+      "expected_output": "A concise summary that emphasizes primary requirements in ALL CAPS and preserves hard constraints.",
+      "files": [],
+      "assertions": [
+        "The FRIDAY deadline is capitalized",
+        "SSO and NO PII IN LOGS are capitalized as hard requirements",
+        "No alternative emphasis format is used as a substitute for critical terms"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Create a 4-step execution plan for launching a beta. Requirements: must have user consent flow, only 100 pilot users, and never exceed rate limit 200 req/min.",
+      "expected_output": "A stepwise execution plan where explicit requirement words map to capitalized critical items and constraints remain visible across steps.",
+      "files": [],
+      "assertions": [
+        "Plan includes a step format with active priorities or equivalent priority tracking",
+        "USER CONSENT FLOW, 100 PILOT USERS, and 200 REQ/MIN appear in ALL CAPS",
+        "Critical constraints are referenced consistently across multiple steps"
+      ]
+    }
+  ]
+}

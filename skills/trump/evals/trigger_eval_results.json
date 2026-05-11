@@ -1,0 +1,59 @@
+{
+  "skill_name": "trump",
+  "description": "Always-on CAPS emphasis skill for reasoning and planning. Use this skill whenever the user asks to highlight CRITICAL constraints, goals, deadlines, budgets, limits, or requirements in ALL CAPS, or asks for a PRIORITY REGISTER / ACTIVE PRIORITIES list across steps. Also trigger when prompts include words like must, never, always, critical, only, constraint, requirement, deadline, budget, limit, or ask to keep emphasis visible during multi-step planning, tool use, summaries, or final output.",
+  "results": [
+    {
+      "query": "What's the weather in Bangkok this weekend?",
+      "should_trigger": false,
+      "trigger_rate": 0.0,
+      "triggers": 0,
+      "runs": 1,
+      "pass": true
+    },
+    {
+      "query": "Apply the trump CAPS-emphasis approach: maintain ACTIVE PRIORITIES and a PRIORITY REGISTER while reasoning through a multi-step rollout with MUST/NEVER constraints.",
+      "should_trigger": true,
+      "trigger_rate": 0.0,
+      "triggers": 0,
+      "runs": 1,
+      "pass": false
+    },
+    {
+      "query": "I need structured planning output using the trump skill template: [STEP N], ACTIVE PRIORITIES, Thinking, DECISION, with ALL CAPS for deadlines and hard limits.",
+      "should_trigger": true,
+      "trigger_rate": 0.0,
+      "triggers": 0,
+      "runs": 1,
+      "pass": false
+    },
+    {
+      "query": "Use the trump skill and produce a 5-step migration plan where a running PRIORITY REGISTER is carried across steps and critical constraints stay in ALL CAPS (DEADLINE, BUDGET, RISK LIMIT).",
+      "should_trigger": true,
+      "trigger_rate": 0.0,
+      "triggers": 0,
+      "runs": 1,
+      "pass": false
+    },
+    {
+      "query": "Write a bash script to rotate nginx logs daily.",
+      "should_trigger": false,
+      "trigger_rate": 0.0,
+      "triggers": 0,
+      "runs": 1,
+      "pass": true
+    },
+    {
+      "query": "Explain the difference between TCP and UDP.",
+      "should_trigger": false,
+      "trigger_rate": 0.0,
+      "triggers": 0,
+      "runs": 1,
+      "pass": true
+    }
+  ],
+  "summary": {
+    "total": 6,
+    "passed": 3,
+    "failed": 3
+  }
+}
