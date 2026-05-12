@@ -12,11 +12,11 @@ for dir in "$SCRIPT_DIR"/skills/*/; do
   cp -r "$dir" "$HOME/.agents/skills/"
 done
 
-# 2. Recursively symlink into all git repos under TARGET_DIR
+# 2. Recursively copy into all git repos under TARGET_DIR
 find "$TARGET_DIR" -type d -name .git -prune | while read -r gitdir; do
   repo="${gitdir%/.git}"
   if [ ! -e "$repo/.agents" ]; then
-    ln -s "$GLOBAL_AGENTS" "$repo/.agents"
+    cp -r "$GLOBAL_AGENTS" "$repo/.agents"
   fi
 done
 
@@ -32,8 +32,8 @@ AGENTS_LINK="$REPO_ROOT/.agents"
 GLOBAL_AGENTS="$HOME/.agents/skills"
 
 if [ ! -e "$AGENTS_LINK" ]; then
-  ln -s "$GLOBAL_AGENTS" "$AGENTS_LINK"
-  echo ".agents symlinked from global config"
+  cp -r "$GLOBAL_AGENTS" "$AGENTS_LINK"
+  echo ".agents copied from global config"
 fi
 EOF
 chmod +x "$HOME/.git-hooks/post-checkout"
